@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>function</title>
+  </head>
+  <body>
+    <div id="card" class="card-conatiner"></div>
+    <script>
+      let screen = document.getElementById("screen");
+      let answer = document.getElementById("answer");
+      let cards = document.getElementById("card");
+
+      // the array below is a list of student age, find student that are eligible to vote >18
+      let questions = [
+        {
+          question: "what year did nigeria beame independent ? ",
+          answer: "1960",
+        },
+        {
+          question: "what is happiness ? ",
+          answer: "sdfff",
+        },
+        {
+          question: "what year did micheal jackson die ? ",
+          answer: "1960",
+        },
+        {
+          question: "what is your favorite food  ? ",
+          answer: "rice ",
+        },
+        {
+          question: "tell me  secret ? ",
+          answer: "sdvfbv b",
+        },
+        {
+          question: "what yhsdgyujh ? ",
+          answer: "1962",
+        },
+      ];
+
+      // find the highest number
+
+      questions.map((each) => {
+        const para = document.createElement("p");
+        const con = document.createTextNode(each.question);
+        para.appendChild(con);
+        const para1 = document.createElement("p");
+        const con1 = document.createTextNode(each.answer);
+        para1.appendChild(con1);
+
+        const node = document.createElement("div");
+        node.className = "card";
+        cards.appendChild(node);
+        node.appendChild(para);
+        node.appendChild(para1);
+
+        console.log(cards);
+        return;
+      });
+
+      //   screen.textContent = "your answer is " + res;
+    </script>
+  </body>
+</html>
