@@ -52,11 +52,11 @@
         const con1 = document.createTextNode(each.answer);
         para1.appendChild(con1);
 
-        const node = document.createElement("div");
-        node.className = "card";
-        cards.appendChild(node);
-        node.appendChild(para);
-        node.appendChild(para1);
+        const div = document.createElement("div");
+        div.className = "card";
+        cards.appendChild(div);
+        div.appendChild(para);
+        div.appendChild(para1);
 
         console.log(cards);
         return;
